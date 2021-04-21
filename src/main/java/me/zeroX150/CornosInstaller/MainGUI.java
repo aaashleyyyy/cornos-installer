@@ -15,7 +15,7 @@ public class MainGUI {
         lmao.setLocationRelativeTo(null);
         lmao.setLayout(null);
         lmao.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        lmao.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("conv.jpeg")));
+        lmao.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getClassLoader().getResource("icon.png")));
         for (Component component : panel.getComponents()) {
             lmao.add(component);
         }

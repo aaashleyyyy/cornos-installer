@@ -14,23 +14,23 @@ public class InstallerScreen extends GuiBase {
         JPanel panel = new JPanel(null);
         JLabel title = new JLabel("<html><body style=\"font-size:25px;\">Installing cornos</body></html>");
         title.setHorizontalAlignment(JLabel.CENTER);
-        title.setBounds(500 / 2 - 300 / 2, 2, 300, 40);
+        title.setBounds(100, 2, 300, 40);
         JLabel location = new JLabel("<html><body style=\"text-align:center;\">Fabric installation folder</body></html>");
-        location.setBounds(500 / 2 - 200 / 2, 45 + 40, 200, 20);
+        location.setBounds(150, 85, 200, 20);
         location.setHorizontalAlignment(JLabel.CENTER);
-        JTextField installLocation = new JTextField("Pick folder");
+        JTextField installLocation = new JTextField("File path");
         installLocation.setHorizontalAlignment(0);
-        installLocation.setBounds(500 / 2 - 300 / 2 - 150 / 2 - 2, 70 + 40, 300, 30);
+        installLocation.setBounds(23, 110, 300, 30);
         installLocation.setEditable(false);
         JProgressBar progress = new JProgressBar();
         progress.setVisible(false);
-        progress.setBounds(500 / 2 - 400 / 2, 70 + 40 + 40 + 50, 400, 20);
+        progress.setBounds(23, 200, 454, 20);
         progress.setMinimum(0);
         progress.setMaximum(100);
         JButton install = new JButton("Install");
         install.setEnabled(false);
         install.setHorizontalAlignment(SwingConstants.CENTER);
-        install.setBounds(500 / 2 - 200 / 2, 70 + 40 + 40, 200, 30);
+        install.setBounds(23, 150, 454, 30);
         install.addActionListener(e -> {
             install.setEnabled(false);
             if (Config.installLoc == null) {
@@ -42,7 +42,8 @@ public class InstallerScreen extends GuiBase {
             if (!modsFolder.exists()) {
                 int result = JOptionPane.showConfirmDialog(panel, "Mods folder not found. Create one and proceed with installation?", "Warning", JOptionPane.YES_NO_OPTION);
                 if (result == JOptionPane.YES_OPTION) {
-                    modsFolder.mkdir();
+                    boolean success = modsFolder.mkdir();
+                    System.out.println("Created mods folder: "+success);
                 } else return;
             }
             progress.setValue(10);
@@ -80,7 +81,7 @@ public class InstallerScreen extends GuiBase {
             }
         });
         JButton pick = new JButton("Pick location");
-        pick.setBounds(500 / 2 + 150 / 2 + 2, 70 + 40, 150, 30);
+        pick.setBounds(327, 110, 150, 30);
         pick.setHorizontalAlignment(JButton.CENTER);
         pick.addActionListener(e -> {
             JFileChooser fileChooser = new JFileChooser();

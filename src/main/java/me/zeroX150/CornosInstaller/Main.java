@@ -10,7 +10,7 @@ public class Main {
         /* THEME */
         LafManager.setTheme(new com.github.weisj.darklaf.theme.OneDarkTheme());
         LafManager.install();
-        System.out.println("yep");
+        /* GUI */
         mainGUI = new MainGUI(new HomeScreen().getContents());
 
     }

@@ -1,7 +1,7 @@
-package me.zeroX150.CornosInstaller;
+package me.aaashleyyyy.CornosInstaller;
 
 import com.github.weisj.darklaf.LafManager;
-import me.zeroX150.CornosInstaller.gui.HomeScreen;
+import me.aaashleyyyy.CornosInstaller.gui.HomeScreen;
 
 public class Main {
     public static MainGUI mainGUI;

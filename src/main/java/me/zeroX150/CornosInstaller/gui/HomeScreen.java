@@ -1,6 +1,6 @@
-package me.zeroX150.CornosInstaller.gui;
+package me.aaashleyyyy.CornosInstaller.gui;
 
-import me.zeroX150.CornosInstaller.Main;
+import me.aaashleyyyy.CornosInstaller.Main;
 
 import javax.swing.*;
 import java.awt.event.WindowEvent;

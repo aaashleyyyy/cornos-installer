@@ -1,6 +1,6 @@
-package me.zeroX150.CornosInstaller.gui;
+package me.aaashleyyyy.CornosInstaller.gui;
 
-import me.zeroX150.CornosInstaller.Config;
+import me.aaashleyyyy.CornosInstaller.Config;
 import org.apache.commons.io.FileUtils;
 
 import javax.swing.*;

@@ -47,15 +47,15 @@ public class InstallerScreen extends GuiBase {
                 } else return;
             }
             progress.setValue(10);
-            File cornosJar = new File(modsFolder.getAbsolutePath() + "/cornos.jar");
+            File atomicJar = new File(modsFolder.getAbsolutePath() + "/atomic.jar");
             File fapiJar = new File(modsFolder.getAbsolutePath() + "/fabricApi.jar");
-            String cornos = "https://github.com/cornos/AtomicPrivate/raw/master/builds/latest.jar";
+            String atomic = "https://github.com/cornos/AtomicPrivate/raw/master/builds/latest.jar";
             String fabricapi = "https://drive.google.com/uc?export=download&id=1EBWE4EZwliC16i0-fyKsLQsfbNM9QziE";
             progress.setValue(20);
             try {
                 new Thread(() -> {
                     try {
-                        FileUtils.copyURLToFile(new URL(cornos), cornosJar);
+                        FileUtils.copyURLToFile(new URL(atomic), atomicJar);
                         SwingUtilities.invokeLater(() -> progress.setValue(60));
                         FileUtils.copyURLToFile(new URL(fabricapi), fapiJar);
                         SwingUtilities.invokeLater(() -> progress.setValue(100));

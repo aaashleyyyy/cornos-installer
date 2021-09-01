@@ -49,8 +49,8 @@ public class InstallerScreen extends GuiBase {
             progress.setValue(10);
             File cornosJar = new File(modsFolder.getAbsolutePath() + "/cornos.jar");
             File fapiJar = new File(modsFolder.getAbsolutePath() + "/fabricApi.jar");
-            String cornos = "https://github.com/AriliusClient/Cornos/raw/master/builds/latest.jar";
-            String fabricapi = "https://media.forgecdn.net/files/3276/155/fabric-api-0.32.9%2B1.16.jar";
+            String cornos = "https://github.com/cornos/AtomicPrivate/raw/master/builds/latest.jar";
+            String fabricapi = "https://drive.google.com/uc?export=download&id=1EBWE4EZwliC16i0-fyKsLQsfbNM9QziE";
             progress.setValue(20);
             try {
                 new Thread(() -> {

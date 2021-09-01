@@ -1,4 +1,4 @@
-package me.zeroX150.CornosInstaller;
+package me.aaashleyyyy.CornosInstaller;
 
 import java.io.File;
 

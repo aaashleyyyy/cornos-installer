@@ -1,4 +1,4 @@
-package me.zeroX150.CornosInstaller;
+package me.aaashleyyyy.CornosInstaller;
 
 import javax.swing.*;
 import java.awt.*;

@@ -9,7 +9,7 @@ public class MainGUI {
     public MainGUI(JPanel panel) {
 
         /* MAIN WINDOW */
-        lmao = new JFrame("Cornos Installer");
+        lmao = new JFrame("Atomic Installer");
         lmao.setResizable(false);
         lmao.setSize(500, 300);
         lmao.setLocationRelativeTo(null);

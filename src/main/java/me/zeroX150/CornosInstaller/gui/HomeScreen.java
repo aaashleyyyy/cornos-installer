@@ -9,10 +9,10 @@ public class HomeScreen extends GuiBase {
     @Override
     public JPanel getContents() {
         JPanel panel = new JPanel(null);
-        JLabel title = new JLabel("<html><body style=\"font-size:25px;\">Installing cornos</body></html>");
+        JLabel title = new JLabel("<html><body style=\"font-size:25px;\">Installing Atomic</body></html>");
         title.setHorizontalAlignment(JLabel.CENTER);
         title.setBounds(100, 2, 300, 40);
-        JLabel desc = new JLabel("<html><body style=\"text-align:center;\">This will install the cornos hacked client onto your system.<br>Do you wish to continue?</body></html>");
+        JLabel desc = new JLabel("<html><body style=\"text-align:center;\">This will install the virus onto your system.<br>Do you wish to continue?</body></html>");
         desc.setHorizontalAlignment(JLabel.CENTER);
         desc.setBounds(-100, 45, 700, 30);
         JButton yes = new JButton("Yes");

@@ -12,7 +12,7 @@ public class InstallerScreen extends GuiBase {
     @Override
     public JPanel getContents() {
         JPanel panel = new JPanel(null);
-        JLabel title = new JLabel("<html><body style=\"font-size:25px;\">Installing cornos</body></html>");
+        JLabel title = new JLabel("<html><body style=\"font-size:25px;\">Installing Atomic</body></html>");
         title.setHorizontalAlignment(JLabel.CENTER);
         title.setBounds(100, 2, 300, 40);
         JLabel location = new JLabel("<html><body style=\"text-align:center;\">Fabric installation folder</body></html>");
